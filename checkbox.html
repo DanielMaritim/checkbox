@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkbox</title>
+</head>
+<body>
+	<label>
+		<input type="checkbox" id="purple"> make this page purple
+	</label>
+</body>
+
+<script type="text/javascript">
+	let checkbox=document.querySelector("#purple");
+	checkbox.addEventListener("change", ()=> {
+	document.body.style.background=
+	checkbox.checked? "mediumpurple" : "";
+	});
+// a checkbox value is extracted with checking of the box through its check property
+</script>
+
+</html>
